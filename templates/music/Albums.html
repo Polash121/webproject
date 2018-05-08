@@ -1,0 +1,10 @@
+{% extends 'music/base.html' %}
+{% block title %}Music{% endblock %}
+
+{% block body %}
+    <!-- Album showing -->
+    {% for album in albums %}
+        <h5>{{ album.title }}</h5>
+    {% endfor %}
+
+{% endblock %}
